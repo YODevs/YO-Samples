@@ -1,0 +1,13 @@
+#> Simple Vector , dynamic array
+
+$cust _colors = _arr('Red','Blue','Green')
+_colors[1] = 'Black'
+_colors[3] = 'White'
+println _colors[1]
+println _colors #>Print Collection
+$wait
+
+#- Output :
+Black
+"Red"  "Black"  "Green"  "White"
+-#
