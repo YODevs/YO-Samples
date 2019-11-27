@@ -1,0 +1,9 @@
+#> Array
+#>_AvgArr($pointer _arrPointer)
+
+$int _quiz = _arr(18,20,12,16)
+printd 'Avg : {0}' << _AvgArr(_quiz*)
+$wait
+#- Output :
+16.5
+-#
