@@ -1,0 +1,11 @@
+#> Array
+#>_ConstArr($pointer _arrPointer)
+
+$cust _colors = _Arr('Red','Blue','Green')
+_ConstArr(_colors*) #> Convert Vector to Array 
+println _colors[1]
+$wait
+
+#- Output :
+Blue
+-#
