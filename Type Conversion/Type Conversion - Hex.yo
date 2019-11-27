@@ -1,0 +1,8 @@
+#>Hex
+#>_Hex($int _num)
+#>Return Type : $Cust
+
+println 'Hex(5)   -> ' & _Hex(5)
+println 'Hex(10)  -> ' & _Hex(10)
+println 'Hex(231) -> ' & _Hex(231)
+$wait

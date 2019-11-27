@@ -1,0 +1,6 @@
+#>Unsigned Integer
+#>_UInt($cust _value)
+#>Return Type : $UInt
+
+print '[-10] To Unsigned Integer : ' & _UInt(-10)
+$wait

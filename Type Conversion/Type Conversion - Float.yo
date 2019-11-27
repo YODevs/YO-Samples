@@ -1,0 +1,6 @@
+#>Float
+#>_Float($cust _value)
+#>Return Type : $Float
+
+print 'To Float : ' & _Float(4.197124514)
+$wait

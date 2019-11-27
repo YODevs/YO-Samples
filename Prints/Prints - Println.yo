@@ -1,0 +1,5 @@
+#>Println
+#>PrintLn $cust _value , [Optional] $cust _textColor
+
+println 'Hello David.'
+print 'How are you ?'

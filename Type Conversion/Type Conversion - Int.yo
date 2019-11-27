@@ -1,0 +1,7 @@
+#>Int
+#>_Int($cust _value)
+#>Return Type : $Int
+
+$float _exp = 2.71
+print 'To Int : ' & _Int(_exp)
+$wait

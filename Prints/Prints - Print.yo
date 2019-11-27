@@ -1,0 +1,4 @@
+#>Print
+#>Print $cust _value , [Optional]$uint _textColor
+print "Hello User.#nl"
+print 'You can see me ?' , 5

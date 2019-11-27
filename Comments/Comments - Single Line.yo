@@ -1,0 +1,2 @@
+#>Single Line Comment
+print "Hello World" #> 'print' command is to print values into the Console.

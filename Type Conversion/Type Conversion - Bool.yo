@@ -1,0 +1,11 @@
+#>Bool
+#>_Bool($int _num)
+#>Return Type : $Bool
+
+$int _boolInt = 1
+
+println _Bool("True")
+println _Bool(FALSE)
+println _Bool(_boolInt)
+
+$wait

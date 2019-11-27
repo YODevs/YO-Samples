@@ -1,0 +1,8 @@
+#>Printd
+#>Printd '... {para0} ... {para1} ...' << Arg0 , Arg1
+
+print 'Enter two number : '
+$int _num1 = $getNum
+$int _num2 = $getNum
+printd '{0} + {1} = {2}' << _num1 , _num2 , [_num1 + _num2]
+$wait

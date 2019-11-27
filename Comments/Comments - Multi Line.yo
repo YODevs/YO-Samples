@@ -1,0 +1,3 @@
+#- 'print' command is to print values into the Console. 
+This is a multi line comment ! -#
+print "Hello World" 

@@ -1,0 +1,8 @@
+#>Oct
+#>_Oct($int _num)
+#>Return Type : $Int
+
+println 'Oct(8)   -> ' & _Oct(8)
+println 'Oct(16)  -> ' & _Oct(16)
+println 'Oct(231) -> ' & _Oct(231)
+$wait

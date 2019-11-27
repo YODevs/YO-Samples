@@ -1,0 +1,7 @@
+#>Double
+#>_Double($cust _value)
+#>Return Type : $Double
+
+println 'To Double : ' & _Double(4.197124514512378455)
+println 'To Float  : ' & _Float(4.197124514512378455)
+$wait
