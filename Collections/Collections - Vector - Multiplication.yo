@@ -1,0 +1,12 @@
+#> Vector :: Multiplication
+
+$int _rangeList1 = _RangeList([0:5])
+$int _rangeList2 = _RangeList([10:15])
+$int _nRange = _MultiplyArr(_rangeList1*,_rangeList2*)
+print _nRange[-1]
+$wait
+
+#- Output :
+Black
+"Red"  "Black"  "Green"  "White"
+-#
