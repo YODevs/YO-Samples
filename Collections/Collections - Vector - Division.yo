@@ -1,0 +1,11 @@
+#> Vector :: Division
+
+$int _rangeList1 = _RangeList([600:1500,200])
+$int _rangeList2 = _RangeList([10:50,10])
+$int _nRange = _DivArr(_rangeList1*,_rangeList2*)
+print _nRange[-1]
+$wait
+
+#- Output :
+"60"  "40"  "33"  "30"  "28"
+-#
