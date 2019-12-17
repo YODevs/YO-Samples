@@ -1,0 +1,34 @@
+#> To Loop
+#- To(count)
+{
+...
+}
+-#
+
+$cust _countries = _Arr('IRAN','USA','ENGLAND','INDIA','NETHERLAND')
+$int _index = 0
+println 'Start To Print : '
+
+to([_SizeOf(_countries*) - 1])
+{
+printd '{0} -> {1} ' << _index , _countries[_index]
+_index += 1
+newline >
+}
+
+print 'End .'
+
+#- Output :
+Start To Print :
+0 -> IRAN
+
+1 -> USA
+
+2 -> ENGLAND
+
+3 -> INDIA
+
+4 -> NETHERLAND
+
+End .
+-#
