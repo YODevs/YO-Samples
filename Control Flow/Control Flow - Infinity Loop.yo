@@ -1,0 +1,13 @@
+#> Loop
+#- Loop
+{
+...
+}
+-#
+
+$int _i = 0
+loop
+{
+println _i 
+_i += 1
+}
