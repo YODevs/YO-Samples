@@ -1,0 +1,38 @@
+#> Until Loop
+#- Until(condition)
+{
+...
+}
+-#
+
+println 'Start To Print : '
+
+$int _i = 0
+$int _b = 0
+until(_i == 15)
+{
+to(_b)
+{
+print '*'
+}
+newline>
+_b , _i += 1
+
+}
+
+print 'End .'
+
+#- Output :
+Start To Print :
+0 -> IRAN
+
+1 -> USA
+
+2 -> ENGLAND
+
+3 -> INDIA
+
+4 -> NETHERLAND
+
+End .
+-#
