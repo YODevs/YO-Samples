@@ -1,0 +1,4 @@
+#> Rep
+#> _Rep(VALUE,COUNTLOOP)
+println(_Rep('*',4))
+$wait
