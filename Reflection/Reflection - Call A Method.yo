@@ -1,0 +1,5 @@
+#>Call A Method
+_Import('mtMath')
+$let _math = _Type('mtMath.Math')
+print 'Pow : ' & _math.Pow2(5,3)
+$wait
