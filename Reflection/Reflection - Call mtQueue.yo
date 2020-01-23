@@ -1,0 +1,20 @@
+#>Call A Method
+_Import('mtQueue')
+$let _q = _Type('mtQueue.QueueP')
+
+_q.Init('colors')
+
+_q.Enqueue('colors','Black')
+_q.Enqueue('colors','Red')
+_q.Enqueue('colors','Blue')
+_q.Enqueue('colors','Green')
+_q.Enqueue('colors','Gray')
+_q.Enqueue('colors','White')
+
+while(_q.Count('colors') >> 0) 
+{
+    print _q.Dequeue('colors') & "#tb"
+}
+
+$wait
+
