@@ -1,0 +1,21 @@
+#>GetValue A Field
+
+print 'This example has a generic form and the information entered is incorrect.
+You can read the source to get started.'
+
+#>Simple Data
+_import('Location ...')
+$let _obj = _Type('Namespace.Class')
+
+#>Assigning a new value
+_obj.exfield = "New value :)" 
+
+#>Calling a field value
+print "Field is *{_obj.exfield}"
+
+$wait
+
+
+#-Output :
+
+Field is New value :)
