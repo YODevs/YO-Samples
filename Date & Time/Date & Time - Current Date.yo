@@ -1,0 +1,8 @@
+#> Date & Time
+
+$let _dt = _Type('YOSTD.Date')
+println _dt.GetDate('Date : {Y}-{M}-{D} | Time : {h}:{m}.{s}')
+
+#- Output :
+Date : 2020-2-7 | Time : 12:7.56
+-#
