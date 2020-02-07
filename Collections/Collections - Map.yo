@@ -1,0 +1,15 @@
+#> Map
+
+$let _map = _Type('YOStd.Map',true)
+_map.Add('Object','Car')
+_map.Add('Color','Gray')
+_map.Add('Model','BMW M5')
+_map.Add('MaxSpeed','210')
+
+println _map.Get('Model') 
+print 'Map Size : ' & _map.Size() 
+
+#- Output :
+BMW M5
+Map Size : 4
+-#
