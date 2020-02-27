@@ -1,0 +1,16 @@
+#> Change Colors
+
+_resource('mtColors')
+$let _myApp = _Type('YOSTD.App')
+
+_myApp.SetForegroundColor(_mtGreen)
+println 'Hello World !'
+
+#>---------Reset Colors------------
+_myApp.ResetColor()
+#>----------------------------------
+
+_myApp.SetBackgroundColor(_mtYellow)
+println 'Hello World !'
+
+$wait
