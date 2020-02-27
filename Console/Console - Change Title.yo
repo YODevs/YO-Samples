@@ -1,0 +1,10 @@
+#> Change Title
+
+$let _myApp = _Type('YOSTD.App')
+$cust _title = nothing
+_myApp.print('Enter a title : ')
+_title = $read
+_myApp.SetTitle(_title)
+_myApp.println('Ok , Title Changed !')
+
+$wait
