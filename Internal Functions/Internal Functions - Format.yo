@@ -1,0 +1,10 @@
+#> Format
+#> _Format(_pointer*,value,arg1,arg2,...)
+
+$cust _text = Nothing
+_format(_text*,'Hello my name is {0} and I am from {1}.' ,'Amin','Iran')
+print _text
+$wait
+
+#- Result : 
+Hello my name is Amin and I am from Iran.
