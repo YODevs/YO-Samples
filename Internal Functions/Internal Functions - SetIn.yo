@@ -1,0 +1,11 @@
+#> SetIn
+#> _SetIn(_pointer*,value,arg1,arg2,...)
+
+$int _stock = 0
+_SetIn(_stock*,'How many balloons do you have ? ')
+print 'Stock is ' & _stock
+$wait
+
+#- Result : 
+How many balloons do you have ? 21
+Stock is 21
