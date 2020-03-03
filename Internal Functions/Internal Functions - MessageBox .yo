@@ -1,0 +1,3 @@
+#> Message Box
+#> _msg(VALUE,TITLE,STYLE)
+_msg("Hello dear.#nlThis is a Message Box Dialog .",'Welcome :)' , 64)
