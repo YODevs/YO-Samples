@@ -1,0 +1,15 @@
+#> Swap
+#> _Swap(_ptr1*,_ptr2*)
+
+$int _x = 8005
+$int _y = 4500
+
+_Swap(_x*,_y*)
+
+print "X = *{_x}#nlY = *{_y}"
+
+$wait
+
+#- Result : 
+X = 4500
+Y = 8005
