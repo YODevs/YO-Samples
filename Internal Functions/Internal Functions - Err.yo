@@ -1,0 +1,13 @@
+#> Err
+#> _err(title,detialsOfTheError,exampleCode)
+
+_err('I/O Error','Unfortunately, the process encountered an error.','')
+
+#-
+
+================================================================================
+I/O ERROR : Runtime error occurred.
+More Detials : Unfortunately, the process encountered an error.
+             ***********************SNIPPT************************
+Example : Not specified
+================================================================================
