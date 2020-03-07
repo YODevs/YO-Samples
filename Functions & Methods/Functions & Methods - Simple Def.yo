@@ -1,0 +1,12 @@
+#> Simple Def
+_resource('mtColors')
+def _SayHello()
+{
+print('Hello All',_mtGreen)
+}
+
+_SayHello()
+_Stop(5000)
+
+#- Result : 
+Hello All
