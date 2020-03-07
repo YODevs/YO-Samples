@@ -1,0 +1,11 @@
+
+def _GetName()
+{
+return 'Douglas Larrey'
+}
+
+print 'Name : ' & _GetName()
+_Stop(5000)
+
+#- Result : 
+Name : Douglas Larrey
