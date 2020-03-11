@@ -1,0 +1,15 @@
+#> Accumulation Data
+#> _H($pointer _ptr, $uint _index)
+#> _ToAcc($pointer _ptr, [Optional]$uint _count)
+
+$int _i = NULL
+_ToAcc(_i*, 3)
+_i = 5
+_i += 2
+_i += [2 * 3]
+_i = 5
+print _H(_i*,0) #>Print Accumulation Data
+$wait
+
+#-Result :
+7
