@@ -1,0 +1,14 @@
+#> Passing Arguments By position
+
+_resource('mtColors')
+
+def _SayHello($cust _message)
+{
+print(_message,_mtGreen)
+}
+
+_SayHello('Hello World !')
+_Stop(5000)
+
+#- Result : 
+Hello World !
