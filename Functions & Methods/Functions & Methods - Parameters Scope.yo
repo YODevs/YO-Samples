@@ -1,0 +1,27 @@
+#> Parameters Scope
+
+def _A_Process(_text,$int _index)
+{
+_getValue = _B_Process()
+print _getValue
+}
+
+def _B_Process()
+{
+
+$cust _repText = Nothing
+to(_index)
+{
+_repText &= _text
+}
+return _repText
+
+}
+
+
+
+_A_Process('*',4)
+_Stop(5000)
+
+#- Result : 
+*****
