@@ -1,0 +1,24 @@
+﻿#> Simple Parameter Array
+
+def _A_Process(*)
+{
+$int _index = 0
+
+to([_SizeOf(_A_Process*) - 1])
+{
+println _A_Process[_index]
+_index += 1
+}
+
+}
+
+_A_Process('He','Sh','Be','Ca','Es','Fa')
+
+$wait
+#- Result : 
+He
+Sh
+Be
+Ca
+Es
+Fa
