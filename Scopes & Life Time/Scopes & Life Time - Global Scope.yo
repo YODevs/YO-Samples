@@ -1,0 +1,32 @@
+#> Global Scope
+
+def _A_Process(_text)
+{
+$int _i = 0
+_getValue = Nothing
+_global(_getValue*,_i*)
+to(10)
+{
+_getValue &= _rep(_text,_i) & "#nl"
+_i += 1
+}
+
+}
+
+_A_Process('*')
+print _getValue
+
+_Stop(5000)
+
+#- Result : 
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+***********
