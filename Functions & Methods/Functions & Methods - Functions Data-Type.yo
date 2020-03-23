@@ -1,0 +1,22 @@
+#> Function's Data-Type 
+
+def $float _CToK($float _temp)
+{
+return [_temp + 273.15]
+}
+
+
+def $int _CToK_Round($float _temp)
+{
+return [_temp + 273.15]
+}
+
+
+
+println '25 C = ' &  _CToK(25) & ' K [Float Type]'
+println '25 C = ' &  _CToK_Round(25) & ' K [Integer Type]'
+_Stop(5000)
+
+#- Result : 
+25 C = 298.15 K [Float Type]
+25 C = 298 K [Integer Type]
