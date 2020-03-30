@@ -1,0 +1,23 @@
+#> Menu
+#>you can change cursor -> _menu.cursor = ">>>"
+
+$let _menu = _Type('YOSTD.Interaction')
+$cust _myMenuList = _Arr('English','Persian','Albanian','Arabic','Korean')
+
+print 'Select the language you want:'
+_result = _menu.ShowMenu(_list(_myMenuList*))
+newline >
+print 'You selected ' & _result
+
+$wait
+
+#-Output :
+Select the language you want:
+English
+->Persian
+Albanian
+Arabic
+Korean
+
+You selected Persian
+-#
