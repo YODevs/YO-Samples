@@ -1,0 +1,29 @@
+#> Lists
+
+$let _fruits = _Type('YOSTD.List',true)
+_fruits.AddWithSplit('banana#orange#apple#pear#banana#kiwi#apple#banana','#')
+
+println "YODA Format => " & _fruits.Clone()
+newline>>
+$uint _index = 0
+to([_fruits.count() - 1])
+{
+println [_index + 1] & " => " & _fruits.Get(_index) & " #tb , Iter => " & _fruits.Iter(_fruits.Get(_index))
+_index += 1
+}
+
+$wait
+#- Output :
+YODA Format => !["banana","orange","apple","pear","banana","kiwi","apple","banan
+a"]
+
+
+1 => banana      , Iter => 3
+2 => orange      , Iter => 1
+3 => apple       , Iter => 2
+4 => pear        , Iter => 1
+5 => banana      , Iter => 3
+6 => kiwi        , Iter => 1
+7 => apple       , Iter => 2
+8 => banana      , Iter => 3
+-#
