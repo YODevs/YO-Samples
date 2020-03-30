@@ -1,0 +1,6 @@
+#>ToList
+#>_ToList(arg1,arg2,arg3...)
+#>Return Type : $cust
+
+print _ToList('BMW','Football','Green','School',81)
+$wait
