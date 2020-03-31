@@ -1,0 +1,10 @@
+#> ShowDialog
+
+$let _input = _Type('YOSTD.Interaction')
+_result = _input.ShowDialog('Enter your name : ' , 'Information')
+print "Your name is *{_result}"
+$wait
+
+#-Output :
+Your name is Ruzes
+-#
