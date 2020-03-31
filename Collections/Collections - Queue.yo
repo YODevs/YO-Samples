@@ -1,0 +1,21 @@
+#> Queue
+
+$let _queue = _Type('YOSTD.Queue',True)
+_queue.Enqueue('Red')
+_queue.Enqueue('Green')
+_queue.Enqueue('Blue')
+_queue.Enqueue('Yellow')
+
+while(_queue.Empty() == False )
+{
+println _queue.Dequeue()
+}
+
+$wait
+
+#- Output : 
+Red
+Green
+Blue
+Yellow
+-#
