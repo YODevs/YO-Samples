@@ -1,0 +1,35 @@
+﻿#> ProgressBar
+
+$let _pg = _Type('YOSTD.ProgressBar',true)
+
+println "Installing Modules :"
+_pg.ShowProgress()
+to(100)
+{
+_pg.Increase()
+_sleep(10)
+}
+
+println "Loading data :"
+_pg.ResetProgress()
+_pg.ProgressChar = '█'
+_pg.ShowProgress()
+to(100)
+{
+_pg.Increase()
+_sleep(50)
+}
+
+newline>
+print 'Process Status : [Successful]'
+
+$wait
+
+#-Output :
+Installing Modules :
+[==================================================]\ 100%
+Loading data :
+[██████████████████████████████████████████████████]* 100%
+
+Process Status : [Successful]
+-#
