@@ -1,0 +1,21 @@
+#> Stack
+
+$let _stack = _Type('YOSTD.Stack',True)
+_stack.push('Red')
+_stack.push('Green')
+_stack.push('Blue')
+_stack.push('Yellow')
+
+while(_stack.Empty() == False )
+{
+println _stack.pop()
+}
+
+$wait
+
+#-Output :
+Yellow
+Blue
+Green
+Red
+-#
