@@ -1,0 +1,16 @@
+#> Bubble Sort
+
+$let _sort = _Type('YOSTD.Sort')
+$let _list = _Type('YOSTD.List',true)
+_list.AddWithSplit('10#20#18#12#8#15#14','#')
+println 'Early form -> ' & _list.clone()
+_data = _sort.GnomeSort(_list.clone())
+_list.set(_data)
+println 'Gnome Sort ->' _list.clone()
+
+$wait
+
+#-Output :
+Early form -> !["10","20","18","12","8","15","14"]
+Bubble Sort ->!["8","10","12","14","15","18","20"]
+-#
