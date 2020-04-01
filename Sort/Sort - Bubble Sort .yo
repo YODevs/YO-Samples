@@ -1,0 +1,13 @@
+#> Bubble Sort
+
+$let _sort = _Type('YOSTD.Sort')
+$let _list = _Type('YOSTD.List',true)
+_list.AddWithSplit('10#20#18#12#8#15#14','#')
+println 'Early form -> ' & _list.clone()
+_data = _sort.BubbleSort(_list.clone())
+_list.set(_data)
+println 'Bubble Sort ->' _list.clone()
+
+$wait
+
+#-Output :
