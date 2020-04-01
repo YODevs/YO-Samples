@@ -1,0 +1,16 @@
+#> StopWatch
+$let _time = _Type('YOSTD.StopWatch',true)
+_time.Start()
+
+_i = 0
+to(9)
+{
+println _rep('*',_i)
+_i += 1
+}
+
+_time.Stop()
+
+print('Time : ' & _time.minutes & ' Min , ' & _time.seconds & ' Sec , ' & _time.milliseconds & ' MSec')
+
+$wait
