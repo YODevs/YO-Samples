@@ -11,3 +11,6 @@ println 'Bubble Sort ->' _list.clone()
 $wait
 
 #-Output :
+Early form -> !["10","20","18","12","8","15","14"]
+Bubble Sort ->!["8","10","12","14","15","18","20"]
+-#
