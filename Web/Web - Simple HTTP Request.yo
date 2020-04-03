@@ -1,0 +1,15 @@
+$let _http = _Type('YOSTD.HTTP',true)
+_http.Create('https://wikipedia.com')
+_http.userAgent = 'FireFox'
+_http.refer = 'Google'
+_http.GetResponse()
+
+println 'Server : ' & _http.server & ' - Code : ' & _http.StatusCode & "#nl" & _http.status & " - CharSet : " & _http.CharSet & " - Protocol Version : " & _http.ProtocolVersion & "- http Length : " & _http.Contentlength
+
+
+$wait
+
+
+#-Output :
+Server : ATS/8.0.6 - Code : 200
+OK - CharSet : ISO-8859-1 - Protocol Version : 1.1- http Length : 75673
