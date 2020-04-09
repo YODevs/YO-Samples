@@ -1,0 +1,17 @@
+#> If & Else Statement
+
+$int _num = 0
+_Setin(_num*,'Enter a number : ')
+if(_num >= 0)
+{
+print "*{_num} Non-negative number"
+}
+else
+{
+print "*{_num} Negative number"
+}
+
+$wait
+#- Output :
+Enter a number : -5
+-5 Negative number
