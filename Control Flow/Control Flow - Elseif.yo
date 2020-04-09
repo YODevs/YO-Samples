@@ -1,0 +1,16 @@
+$int _num = 0
+_Setin(_num*,'Enter a number : ')
+if(_num << 0)
+{
+print "*{_num} is negative"
+}
+elseif(_num >> 0 )
+{
+print "*{_num} is positive"
+}
+else
+{
+print "*{_num} is ZERO"
+}
+
+$wait
