@@ -1,0 +1,22 @@
+$let _clipBoard = _Type('YOSTD.ClipBoard')
+_clipBoard.SetData("Hello All")
+println "ClipBoard : " & _clipBoard.GetData()
+
+$cust _result = Nothing
+_SetIn(_result* , "Will the clipboard be erased? [Y/N]")
+_result = _LCase(_result)
+if(_result == 'y')
+{
+_clipBoard.ClearData()
+print 'The clipboard was deleted.'
+}
+elseif(_result == 'n')
+{
+println 'The clipboard remained in memory'
+}
+else
+{
+_err( _result & " - The data is not reliable.")
+}
+
+$wait
