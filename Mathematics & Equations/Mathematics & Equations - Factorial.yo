@@ -1,0 +1,13 @@
+$int _n = 10
+$long _fact = 1
+_i = 1
+while(_i <= _n)
+{
+_fact *= _i
+_i += 1
+}
+print _fact
+
+$wait
+
+#> 3628800
