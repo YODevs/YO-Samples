@@ -1,0 +1,18 @@
+$let _assert = _Type('YOSTD.Assert',True)
+
+
+def _GetNames()
+{
+return _ToList('Bonak','Cole','Dogulas','Farias')
+}
+
+_names = _GetNames()
+_assert.FindOut('Check Exist An Item',_names,'Cole')
+_assert.FindOut('Check Exist An Item',_names,'Willi')
+
+$wait
+
+
+#-
+Check Exist An Item	!["Bonak","Cole","Dogulas","Farias"]	Cole	FindOut	Pass
+Check Exist An Item	!["Bonak","Cole","Dogulas","Farias"]	Willi	FindOut	Failed			
