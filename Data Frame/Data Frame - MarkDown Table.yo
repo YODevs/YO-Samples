@@ -1,0 +1,23 @@
+#> Simple Table
+$let _table = _Type('YOSTD.Table',true)
+_table.AddColumn( _ToList('First_Name','Last_Name','Address','State','Zip') )
+
+_table.AddRow( _ToList('Ernie','Nicka','90991 Thorburn Ave','NY','00215') )
+_table.AddRow( _ToList('Albina','Flosi','2 Cedar Ave #84','WI','41182') )
+_table.AddRow( _ToList('Jose','Caudu','6 Greenleaf Ave','TX','245123') )
+_table.AddRow( _ToList('Kati','Chul','394 Manchester Blvd','OR','97100') )
+_table.AddRow( _ToList('James','Corrio','2742 Distribution Way','CA','54512') )
+_table.AddRow( _ToList('Ammie','Gillian','6980 Dorsett Rd','KS','97754') )
+
+print _table.ToMarkDownString()
+$wait
+
+#-Output :
+| First_Name | Last_Name | Address               | State | Zip    |
+|------------|-----------|-----------------------|-------|--------|
+| Ernie      | Nicka     | 90991 Thorburn Ave    | NY    | 00215  |
+| Albina     | Flosi     | 2 Cedar Ave #84       | WI    | 41182  |
+| Jose       | Caudu     | 6 Greenleaf Ave       | TX    | 245123 |
+| Kati       | Chul      | 394 Manchester Blvd   | OR    | 97100  |
+| James      | Corrio    | 2742 Distribution Way | CA    | 54512  |
+| Ammie      | Gillian   | 6980 Dorsett Rd       | KS    | 97754  |
