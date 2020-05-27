@@ -1,0 +1,21 @@
+#> Simple Regex
+_input = "Hello Amin #nl your code is 564121"
+$let _regex = _Type('YOSTD.Regex',true)
+_regex.MatchStr(_input,'\d+$')
+if(_regex.MatchResult == true)
+{
+println 'Value : '_regex.MatchValue
+println 'Len : ' & _regex.MatchLength & "#nlResult : " & _regex.MatchResult
+}
+else
+{
+_err("No results found.")
+}
+
+
+$wait
+
+#- Result :
+Value : 564121
+Len : 6
+Result : True
