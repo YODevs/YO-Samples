@@ -1,0 +1,23 @@
+#> MatchMap
+_input = "Hello Amin #nl your code is 564121"
+$let _regex = _Type('YOSTD.Regex',true)
+$let _matchRegex = _Type('YOStd.Map',true)
+_regex.MatchStr(_input,'\d+$')
+if(_regex.MatchResult == true)
+{
+_matchRegex.set(_regex.MatchMap)
+println 'Value : '_matchRegex.Get('MatchValue')
+println 'Len : ' & _matchRegex.Get('MatchLength') & "#nlResult : " & _matchRegex.Get('MatchResult')
+}
+else
+{
+_err("No results found.")
+}
+
+
+$wait
+
+#- Result :
+Value : 564121
+Len : 6
+Result : True
