@@ -1,0 +1,31 @@
+_input = " <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> "
+
+$let _regex = _Type('YOSTD.Regex',true)
+$let _matchRegex = _Type('YOStd.Map',true)
+_regex.MatchStr(_input,'<li>(.+)<\/li>')
+
+if(_regex.MatchResult == true)
+{
+println _regex.MatchValue
+while(_regex.NextMatch() == true)
+{
+println _regex.MatchValue
+}
+
+}
+else
+{
+_err("No results found.")
+}
+
+
+$wait
+
+#- Result :
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
