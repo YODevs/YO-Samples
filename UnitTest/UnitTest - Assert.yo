@@ -1,0 +1,27 @@
+$let _assert = _Type('YOSTD.Assert',True)
+
+def _GetFirstItem(*)
+{
+return _GetFirstItem[0]
+}
+
+
+_names = _ToList('Bonak','Cole','Dogulas','Farias')
+_assert.FindOut('Check Exist Name',_names,'Cole')
+_assert.FindOut('Check Exist Name',_names,'Willi')
+
+$int _num = 0
+_assert.IsTrue("Check Init Value",_num,Null)
+_assert.IsTrue("Equal Two Int",1000000,1_000_000)
+_assert.IsTrue("Sum Two Int",[1000000 + 1_000_000],[2_000_000])
+
+_assert.IsTrue('Get First Item Of parameter',_GetFirstItem(512,232,143,453,541),512)
+
+_assert.StartsWith('CheckStartsWith','YO Programming Language','yo programming') 
+
+_assert.Regex("Regular Expressions",'2154-9641-8214-2314','^\d{4}-\d{4}-\d{4}-\d{4}$')
+
+$wait
+
+				
+		
