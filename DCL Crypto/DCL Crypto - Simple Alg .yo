@@ -1,0 +1,41 @@
+#> DCL Algorithm -> https://github.com/YODevs/DCL
+
+$let _dcl = _Type('YOSTD.DCL',true)
+
+$cust _text = ''
+$cust _key = ''
+$uint _alfa = 0
+
+while(true == true)
+{
+_SetIn(_text* ,' Enter text : '     )
+_SetIn(_key*  ,' Enter key : '      )
+_SetIn(_alfa* ,' Enter Alfa[0-9] : ')
+Println(_dcl.GetHash(_text,_key,_alfa))
+newline>
+} 
+
+
+#- Output :
+
+ Enter text : QWERTY
+ Enter key : PassKe32A82
+ Enter Alfa[0-9] : 8
+SYYDXEYZDDSYZFXXBXEDSSYXADEYYBASEZCACYEBAAFDXAYSYCAFYYECYSDZYEZX
+
+ Enter text : QWERTY2
+ Enter key : PassKe32A82
+ Enter Alfa[0-9] : 8
+XDESYSXSYCYXFDXSFSSDYXADSBBAZZSAZBEEDCABDAEXXFEAEFASSBAXCXYZZSEX
+
+ Enter text : QWErTY
+ Enter key : PassKe32A82
+ Enter Alfa[0-9] : 8
+XBZXDEXXDZXXSSSDSYEXSSYXESCCYBASFZZSFEEBACZYAYZSYCBYBFDBESDZSAYY
+
+ Enter text : QWERTY
+ Enter key : PassKe32A82
+ Enter Alfa[0-9] : 4
+DSFDBYCBYDFXDSEDCFYDDFYBDZFYYFDCZCCZDFFADAZEYCCESSBYYBXYCSAAAEFE
+
+ Enter text :
